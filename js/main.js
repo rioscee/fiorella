@@ -36,30 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Navbar Scroll Effect
-    // Navbar Smart Scroll Effect
-    const navbar = document.querySelector('.navbar');
-    let lastScrollTop = 0;
+    // Navbar Scroll Effect logic moved to components.js
 
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        // Add shadow/compact style on scroll
-        if (scrollTop > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
-        // Hide on scroll down, show on scroll up
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-            navbar.classList.add('navbar-hidden');
-        } else {
-            navbar.classList.remove('navbar-hidden');
-        }
-
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-    });
 
     // Intersection Observer for Fade-Up Animations
     const observerOptions = {
