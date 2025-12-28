@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Libro de Rituales Diarios - Fiorella Vigil. Transforma tu rutina con prácticas de alquimia y bienestar.">
+
+    <link rel="icon" href="images/logo-blanco.svg" type="image/svg+xml">
+    <title>Rituales Diarios - Fiorella Vigil</title>
+
+    <!-- Fonts (Local) -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Header (Background Image overlay) -->
+    <section class="page-header"
+        style="background-image: linear-gradient(rgba(226, 148, 144, 0.7), rgba(226, 148, 144, 0.7)), url('images/fondo-mesa.webp');">
+        <div class="container">
+            <span class="badge-accent">Ebook / Guía Digital</span>
+            <h1 class="page-title">Libro de Rituales Diarios</h1>
+            <div class="page-meta">
+                <span><span class="material-symbols-outlined">auto_awesome</span> Best Seller</span>
+                <span><span class="material-symbols-outlined">download</span> Descarga Inmediata</span>
+                <span><span class="material-symbols-outlined">star</span> 5.0 (Reseñas)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Layout -->
+    <section class="section" style="padding-top: 4rem;">
+        <div class="container">
+            <div class="course-layout">
+
+                <!-- Left Content -->
+                <div class="course-content">
+
+                    <!-- Product Gallery -->
+                    <div class="product-gallery">
+                        <div class="main-image-container">
+                            <img id="mainImage" src="images/rituales-diarios.avif" alt="Portada Libro Rituales Diarios">
+                        </div>
+                        <div class="thumbnails-row">
+                            <!-- Using the same image as placeholder for thumbnails, user can replace -->
+                            <img src="images/rituales-diarios.avif" class="thumb active"
+                                onclick="changeImage(this.src, this)">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=800&auto=format&fit=crop"
+                                class="thumb" onclick="changeImage(this.src, this)" alt="Pagina interior 1">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800&auto=format&fit=crop"
+                                class="thumb" onclick="changeImage(this.src, this)" alt="Pagina interior 2">
+                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop"
+                                class="thumb" onclick="changeImage(this.src, this)" alt="Lectura">
+                            <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?q=80&w=800&auto=format&fit=crop"
+                                class="thumb" onclick="changeImage(this.src, this)" alt="Ambiente">
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h3>Descripción del Libro</h3>
+                        <p>
+                            ¿Sientes que tus días pasan en piloto automático? <strong>Rituales Diarios</strong> es más
+                            que un libro; es una guía práctica diseñada para ayudarte a recuperar la magia en tu vida
+                            cotidiana.
+                        </p>
+                        <p>
+                            A través de sus páginas, descubrirás cómo transformar las actividades rutinarias en actos
+                            sagrados de autocuidado y conexión. Aprenderás a crear espacios de calma, a intencionar tu
+                            mañana y a cerrar tu día con gratitud, elevando tu vibración y alineándote con tu propósito.
+                        </p>
+                        <p>
+                            Este ebook recopila años de sabiduría ancestral adaptada a la vida moderna, con ejercicios
+                            sencillos pero poderosos que puedes aplicar desde hoy mismo.
+                        </p>
+                    </div>
+
+                    <div class="content-block">
+                        <h3>Lo que encontrarás dentro:</h3>
+                        <ul class="checklist-grid">
+                            <li><span class="material-symbols-outlined check-mark">check</span> Rituales de mañana para
+                                energía y enfoque.</li>
+                            <li><span class="material-symbols-outlined check-mark">check</span> Prácticas de limpieza
+                                energética para tu hogar.</li>
+                            <li><span class="material-symbols-outlined check-mark">check</span> Meditaciones breves para
+                                momentos de estrés.</li>
+                            <li><span class="material-symbols-outlined check-mark">check</span> Guía de cristales y
+                                aceites esenciales básicos.</li>
+                            <li><span class="material-symbols-outlined check-mark">check</span> Diario de gratitud y
+                                manifestación.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Reviews Section -->
+                    <div class="content-block reviews-section">
+                        <h3>Lo que dicen las lectoras</h3>
+
+                        <!-- Review 1 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img loading="lazy" src="https://randomuser.me/api/portraits/women/12.jpg" alt="Ana C."
+                                    class="review-avatar">
+                                <div>
+                                    <span class="review-date">hace 1 mes</span>
+                                    <h4>Ana Clara</h4>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <span class="material-symbols-outlined filled">star</span>
+                                <span class="material-symbols-outlined filled">star</span>
+                                <span class="material-symbols-outlined filled">star</span>
+                                <span class="material-symbols-outlined filled">star</span>
+                                <span class="material-symbols-outlined filled">star</span>
+                            </div>
+                            <p class="review-text">
+                                "Es hermoso. Cada ritual es una invitación a amarse más. Lo leo un poco cada día y me da
+                                mucha paz."
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Sidebar (Sticky) -->
+                <aside class="course-sidebar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-body">
+                            <h4 style="margin-bottom: 1rem; color: var(--main-text);">Detalles del Producto</h4>
+                            <div class="price-container">
+                                <!-- <span class="discount-badge">Oferta</span> -->
+                                <div class="price-tag">
+                                    <span class="current-price">$27.00 USD</span>
+                                </div>
+                            </div>
+
+                            <ul class="course-meta">
+                                <li><span class="material-symbols-outlined">menu_book</span> Formato:
+                                    <span>PDF Digital (Ebook)</span>
+                                </li>
+                                <li><span class="material-symbols-outlined">file_present</span> Páginas: <span>45+
+                                        Páginas</span></li>
+                                <li><span class="material-symbols-outlined">devices</span> Acceso: <span>Celular,
+                                        Tablet, PC</span></li>
+                                <li><span class="material-symbols-outlined">bolt</span> Entrega: <span>Inmediata
+                                        (Email)</span></li>
+                            </ul>
+
+                            <a href="#" class="btn-primary-full">
+                                Comprar Ahora <span class="material-symbols-outlined">shopping_cart</span>
+                            </a>
+
+                            <p
+                                style="font-size: 0.8rem; color: var(--text-light); text-align: center; margin-top: 1rem;">
+                                <span class="material-symbols-outlined"
+                                    style="font-size: 1rem; vertical-align: middle;">lock</span> Pago 100% Seguro
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function changeImage(src, element) {
+            // Update main image
+            const mainImage = document.getElementById('mainImage');
+            mainImage.style.opacity = '0';
+
+            setTimeout(() => {
+                mainImage.src = src;
+                mainImage.style.opacity = '1';
+            }, 300);
+
+            // Update active class on thumbnails
+            document.querySelectorAll('.thumb').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

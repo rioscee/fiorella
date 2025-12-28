@@ -1660,3 +1660,53 @@ footer {
         padding: 0 1rem;
     }
 }
+
+/* Product Gallery */
+.product-gallery {
+    margin-bottom: 3rem;
+}
+
+.main-image-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* Square for products usually works well, or 4/5 */
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnails-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.thumb {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.thumb:hover,
+.thumb.active {
+    opacity: 1;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
